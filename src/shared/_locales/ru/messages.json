@@ -134,6 +134,9 @@
   "doneDescription": {
     "message": "Операция выполнена успешно."
   },
+  "enableVolunteerNode": {
+    "message": "Enable volunteer node"
+  },
   "extensionDisabledTitle": {
     "message": "Censor Tracker выключен"
   },
@@ -432,6 +435,9 @@
   "useRegistryDesc": {
     "message": "Мы ведём реестры заблокированных сайтов, чтобы предоставлять к ним доступ через прокси. Если эта опция выключена, то будут проксироваться только сайты из вашего списка Проксируемых сайтов."
   },
+  "volunteerNodeTitle": {
+    "message": "Enable volunteer node"
+  },
   "whatThisMean": {
     "message": "что это значит"
   },
@@ -458,5 +464,8 @@
   },
   "updateAvailableButtonTitle": {
     "message": "Обновить"
+  },
+  "volunteerSettingsTitle": {
+    "message": "Volunteer-node settings"
   }
 }

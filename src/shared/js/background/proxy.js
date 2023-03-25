@@ -129,7 +129,7 @@ class ProxyManager {
       }),
     }).catch(() => {
       // We don't care about the result.
-      console.log(`Pinged ${proxyPingURI}!`)
+      console.log(`Pinged proxy ${proxyPingURI}!`)
     })
   }
 

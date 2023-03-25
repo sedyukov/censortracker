@@ -134,6 +134,9 @@
   "doneDescription": {
     "message": "Operation completed successfully."
   },
+  "enableVolunteerNode": {
+    "message": "Enable volunteer node"
+  },
   "extensionDisabledTitle": {
     "message": "Censor Tracker disabled"
   },
@@ -432,6 +435,9 @@
   "useRegistryDesc": {
     "message": "We maintain registries of blocked sites in order to provide access to them through a proxy. If this option is disabled, then only sites from your list of «Proxying List» will be proxied."
   },
+  "volunteerNodeTitle": {
+    "message": "Enable volunteer node"
+  },
   "whatThisMean": {
     "message": "what does it mean"
   },
@@ -458,5 +464,8 @@
   },
   "updateAvailableButtonTitle": {
     "message": "Update"
+  },
+  "volunteerSettingsTitle": {
+    "message": "Volunteer-node settings"
   }
 }

@@ -78,12 +78,13 @@ export const translateDocument = (doc, props = {}) => {
     // Extract value with the given name from "props".
     const renderProp = element.getAttribute('data-i18n-render-prop')
 
+    console.log(value)
     let message = Browser.i18n.getMessage(value)
 
     if (renderProp && Object.hasOwnProperty.call(props, renderProp)) {
       message = Browser.i18n.getMessage(value, props[renderProp])
     }
-
+    console.log(message)
     if (message) {
       element.innerHTML = message
     }

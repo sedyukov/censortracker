@@ -134,6 +134,9 @@
    "doneDescription": {
       "message": "Операцію виконано успішно."
    },
+   "enableVolunteerNode": {
+      "message": "Enable volunteer node"
+    },
    "extensionDisabledTitle": {
       "message": "Censor Tracker вимкнено"
    },
@@ -431,6 +434,9 @@
    },
    "useRegistryDesc": {
       "message": "Ми ведемо реєстри заблокованих сайтів, щоб надавати до них доступ через проксі. Якщо цю опцію вимкнено, то проксіруватимуться тільки сайти з вашого списку сайтів, що проксіруються."
+   },
+   "volunteerSettingsTitle": {
+      "message": "Volunteer-node settings"
    },
    "whatThisMean": {
       "message": "що це означає"

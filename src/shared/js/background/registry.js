@@ -9,18 +9,21 @@ class Registry {
    */
 
   async getDomains () {
-    const {
-      domains,
-      useRegistry,
-      ignoredHosts,
-      customProxiedDomains,
-    } = await Browser.storage.local.get({
+    console.log('getDomains call')
+    const storageObject = await Browser.storage.local.get({
       domains: [],
       useRegistry: true,
       ignoredHosts: [],
       customProxiedDomains: [],
     })
+    const {
+      domains,
+      useRegistry,
+      ignoredHosts,
+      customProxiedDomains,
+    } = storageObject
 
+    console.log(storageObject)
     if (!useRegistry) {
       if (customProxiedDomains.length > 0) {
         return customProxiedDomains

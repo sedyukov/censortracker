@@ -92,7 +92,8 @@ const webConfig = {
     'registry-options': './src/shared/js/pages/registry-options.js',
     'rules-editor': './src/shared/js/pages/rules-editor.js',
     'translator': './src/shared/js/pages/translator.js',
-    'controlled': `./src/shared/js/pages/controlled.js`
+    'controlled': `./src/shared/js/pages/controlled.js`,
+    'volunteer-node': './src/shared/js/pages/volunteer-node.js',
   },
   output: {
     path: resolve(`dist/${BROWSER}/${OUTPUT_SUB_DIR}`),
@@ -197,6 +198,13 @@ const webConfig = {
       template: 'src/shared/pages/ignore-list.html',
       inject: true,
       chunks: ['rules-editor', 'translator'],
+      meta: contentSecurityPolicy,
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'volunteer-node.html',
+      template: 'src/shared/pages/volunteer-node.html',
+      inject: true,
+      chunks: ['volunteer-node', 'translator'],
       meta: contentSecurityPolicy,
     }),
     new HTMLWebpackPlugin({
