@@ -135,7 +135,7 @@
     "message": "Операция выполнена успешно."
   },
   "enableVolunteerNode": {
-    "message": "Enable volunteer node"
+    "message": "Connect to volunteer node"
   },
   "extensionDisabledTitle": {
     "message": "Censor Tracker выключен"
@@ -232,6 +232,9 @@
   "optionsIgnoredWebsitesDesc": {
     "message": "Адреса, для которых прокси всегда будет отключён. Может помочь, если есть проблемы с открытием сайта."
   },
+  "optionsPeerConnection": {
+    "message": "Here you can specify ip address of volunteer node to connect. It will help in case of blocking our centralized resources"
+  },
   "optionsPageTitle": {
     "message": "Настройки"
   },
@@ -243,6 +246,9 @@
   },
   "optionsProxyDesc": {
     "message": "Если сайт заблокирован - Censor Tracker предоставит к нему доступ. Отключите эту настройку, если вы пользуетесь другим сервисом для обхода блокировок (например, VPN), чтобы увеличить скорость соединения."
+  },
+  "optionsVolunteerNodeDesc": {
+    "message": "In our community we have volunteers who provide their server to connect to them. This helps us to be decentalized. If our centralized services are blocked in your area you can find volunteer ip-address and put it here, then you should activate checkbox."
   },
   "optionsProxyPageTitle": {
     "message": "Настройки Прокси"
@@ -436,7 +442,7 @@
     "message": "Мы ведём реестры заблокированных сайтов, чтобы предоставлять к ним доступ через прокси. Если эта опция выключена, то будут проксироваться только сайты из вашего списка Проксируемых сайтов."
   },
   "volunteerNodeTitle": {
-    "message": "Enable volunteer node"
+    "message": "Connect to volunteer node"
   },
   "whatThisMean": {
     "message": "что это значит"

@@ -49,7 +49,23 @@ const fetchConfig = async () => {
     currentRegionCode: '',
   })
 
-  for (const { endpointName, endpointUrl } of getConfigAPIEndpoints()) {
+  const { peerEndpoint, isPeerConnected } = await browser.storage.local.get({
+    peerEndpoint: '',
+    isPeerConnected: false,
+  })
+
+  let apiEndpoints = getConfigAPIEndpoints()
+
+  if (isPeerConnected && peerEndpoint) {
+    apiEndpoints = [
+      {
+        endpointName: 'Peer Endpoint',
+        endpointUrl: `${peerEndpoint}/api/config`,
+      },
+    ]
+  }
+
+  for (const { endpointName, endpointUrl } of apiEndpoints) {
     try {
       const response = await fetch(endpointUrl)
 

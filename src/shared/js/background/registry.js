@@ -9,7 +9,6 @@ class Registry {
    */
 
   async getDomains () {
-    console.log('getDomains call')
     const storageObject = await Browser.storage.local.get({
       domains: [],
       useRegistry: true,
@@ -23,7 +22,6 @@ class Registry {
       customProxiedDomains,
     } = storageObject
 
-    console.log(storageObject)
     if (!useRegistry) {
       if (customProxiedDomains.length > 0) {
         return customProxiedDomains

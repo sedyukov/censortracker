@@ -135,7 +135,7 @@
     "message": "Operation completed successfully."
   },
   "enableVolunteerNode": {
-    "message": "Enable volunteer node"
+    "message": "Connect to volunteer node"
   },
   "extensionDisabledTitle": {
     "message": "Censor Tracker disabled"
@@ -232,6 +232,9 @@
   "optionsIgnoredWebsitesDesc": {
     "message": "For these addresses proxy will always be disabled. If there are problems with opening certain websites, this list may help."
   },
+  "optionsPeerConnection": {
+    "message": "Here you can specify ip address of volunteer node to connect. It will help in case of blocking our centralized resources"
+  },
   "optionsPageTitle": {
     "message": "Settings"
   },
@@ -243,6 +246,9 @@
   },
   "optionsProxyDesc": {
     "message": "If a website is blocked, Censor Tracker will bypass restrictions to give you access to it. Disable this setting if you use another service to bypass censorship (for example, a VPN) to increase connection speed."
+  },
+  "optionsVolunteerNodeDesc": {
+    "message": "In our community we have volunteers who provide their server to connect to them. This helps us to be decentalized. If our centralized services are blocked in your area you can find volunteer ip-address and put it here, then you should activate checkbox."
   },
   "optionsProxyPageTitle": {
     "message": "Proxy Settings"
@@ -436,7 +442,7 @@
     "message": "We maintain registries of blocked sites in order to provide access to them through a proxy. If this option is disabled, then only sites from your list of «Proxying List» will be proxied."
   },
   "volunteerNodeTitle": {
-    "message": "Enable volunteer node"
+    "message": "Connect to volunteer node"
   },
   "whatThisMean": {
     "message": "what does it mean"

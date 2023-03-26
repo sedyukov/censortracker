@@ -35,53 +35,28 @@
           <input id="enableVolunteerNodeCheckbox" type="checkbox" class="toggle-button">
         </div>
         <div class="main-page__about">
-          <div class="use_proxy__text" data-i18n-key="optionsProxyDesc"></div>
+          <div class="use_proxy__text" data-i18n-key="optionsVolunteerNodeDesc"></div>
         </div>
+      </div>
 
-        <div id="proxyCustomOptions" hidden>
-          <div id="proxyCustomOptionsRadioGroup" class="radio-buttons-group">
-            <div class="radio-button">
-              <input id="useDefaultProxy" class="radio-button-input" type="radio" name="proxy-radio" value="default"
-                     checked>
-              <label class="radio-button-label" for="useDefaultProxy" data-i18n-key="useDefaultProxy"></label>
-            </div>
-            <div class="radio-button">
-              <input class="radio-button-input" type="radio" name="proxy-radio" id="useCustomProxy" value="custom">
-              <label class="radio-button-label" for="useCustomProxy" data-i18n-key="useOwnProxy"></label>
-            </div>
-          </div>
+      <div id="proxyCustomOptions">
+        <div id="proxyOptionsInputs" class="proxy-options-inputs">
+          <input type="text"
+                 id="endpointInput"
+                 class="input-proxy"
+                 placeholder="http://123.456.78.90:3000">
 
-          <div id="proxyOptionsInputs" class="proxy-options-inputs hidden">
-            <input type="text"
-                   id="proxyServerInput"
-                   class="input-proxy"
-                   placeholder="username:password@hostname:port">
-
-            <button class="btn btn-dark" id="saveCustomProxyButton">
-              <span class="btn__text" data-i18n-key="saveCustomProxyButton"></span>
-            </button>
-          </div>
+          <button class="btn btn-dark" id="saveEndpointButton">
+            <span class="btn__text" data-i18n-key="saveCustomProxyButton"></span>
+          </button>
         </div>
+      </div>
 
-        <div id="controlledByOtherExtension" class="main-page__extension" hidden>
-          <div class="extension__title" data-i18n-key="controlledByOtherExtensionTitle"
-               data-i18n-render-prop="extensionName">
-          </div>
-          <div class="extension__text" data-i18n-key="controlledByOtherExtensionDesc"
-               data-i18n-render-prop="extensionName">
-          </div>
-          <a class="default-btn disable-other-extensions" data-i18n-key="disableAll"></a>
-        </div>
-
-        <div id="controlledByOtherExtensions" class="main-page__extension" hidden>
-          <div class="extension__title" data-i18n-key="controlledByOtherExtensions"></div>
-          <div class="extension__text">
-            <div data-i18n-key="controlledByOtherExtensionsDesc"></div>
-            <ol id="extensionsWhichControlsProxy">
-            </ol>
-          </div>
-          <a class="default-btn disable-other-extensions" data-i18n-key="disableAll"></a>
-        </div>
+      <!-- TODO: put instrusction -->
+      <input type="checkbox" id="hd-4" class="hide"/>
+      <label for="hd-4">Instruction</label>
+      <div>
+        Content
       </div>
 
     </div>

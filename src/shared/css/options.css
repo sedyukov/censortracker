@@ -938,6 +938,35 @@ kbd {
     width: calc(100% + 0px);
 }
 
+#endpointInput {
+    margin-right: 10px;
+}
+
+
+
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+.hide + label {
+    padding: 0;
+    cursor: pointer;
+    display: inline-block; 
+}
+.hide:checked + label {
+    border-bottom: 0;
+}
+.hide:checked + label + div {
+    display: block; 
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px; 
+}
+
 
 /*@media (prefers-color-scheme: dark) {*/
 

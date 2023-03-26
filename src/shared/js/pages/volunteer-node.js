@@ -1,19 +1,45 @@
 import Browser from 'Background/browser-api'
-import { initVolunteereNode } from 'Background/volunteer-service'
+
+import { synchronize } from '../background/server'
 
 (async () => {
   const enableVolunteerNodeCheckbox = document.querySelector('#enableVolunteerNodeCheckbox')
+  const saveEndpointButton = document.querySelector('#saveEndpointButton')
+  const endpointInput = document.querySelector('#endpointInput')
+
+  const { peerEndpoint, isPeerConnected } = await Browser.storage.local.get({
+    peerEndpoint: '',
+    isPeerConnected: false,
+  })
+
+  if (peerEndpoint) {
+    endpointInput.value = peerEndpoint
+  }
+
+  enableVolunteerNodeCheckbox.checked = isPeerConnected
 
   enableVolunteerNodeCheckbox.addEventListener('change', async (event) => {
-    const enableNode = event.target.checked
+    const isPeerConnectedChecked = event.target.checked
 
-    if (enableNode) {
-      initVolunteereNode()
-      console.log('enable node')
-    } else {
-      console.log('disable node')
-    }
+    await Browser.storage.local.set({ isPeerConnected: isPeerConnectedChecked })
 
-    await Browser.storage.local.set({ enableNode })
+    await synchronize()
   }, false)
+
+  saveEndpointButton.addEventListener('click', async (event) => {
+    const peerEndpointValue = endpointInput.value
+
+    if (peerEndpointValue) {
+      await Browser.storage.local.set({
+        peerEndpoint: peerEndpointValue,
+      })
+
+      endpointInput.classList.remove('invalid-input')
+
+      console.log(`Peer endpoint changed to: ${peerEndpointValue}`)
+      await synchronize()
+    } else {
+      endpointInput.classList.add('invalid-input')
+    }
+  })
 })()

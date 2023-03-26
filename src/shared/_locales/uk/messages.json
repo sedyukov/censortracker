@@ -135,7 +135,7 @@
       "message": "Операцію виконано успішно."
    },
    "enableVolunteerNode": {
-      "message": "Enable volunteer node"
+      "message": "Connect to volunteer node"
     },
    "extensionDisabledTitle": {
       "message": "Censor Tracker вимкнено"
@@ -232,6 +232,9 @@
    "optionsIgnoredWebsitesDesc": {
       "message": "Адреси, для яких проксі завжди буде вимкнено. Може допомогти, якщо є проблеми з відкриттям сайту."
    },
+   "optionsPeerConnection": {
+      "message": "Here you can specify ip address of volunteer node to connect. It will help in case of blocking our centralized resources"
+    },
    "optionsPageTitle": {
       "message": "Налаштування"
    },
@@ -244,6 +247,9 @@
    "optionsProxyDesc": {
       "message": "Якщо сайт заблокований - Censor Tracker надасть до нього доступ. Вимкніть це налаштування, якщо ви користуєтеся іншим сервісом для обходу блокувань (наприклад, VPN), щоб збільшити швидкість з'єднання."
    },
+   "optionsVolunteerNodeDesc": {
+      "message": "In our community we have volunteers who provide their server to connect to them. This helps us to be decentalized. If our centralized services are blocked in your area you can find volunteer ip-address and put it here, then you should activate checkbox."
+    },
    "optionsProxyPageTitle": {
       "message": "Налаштування Проксі"
    },
