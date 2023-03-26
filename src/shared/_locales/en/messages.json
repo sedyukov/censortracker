@@ -176,6 +176,9 @@
   "ignoredSitesTitle": {
     "message": "Ignored Websites"
   },
+  "instructionForVolunteer": {
+    "message": "Instruction to become a volunteer"
+ },
   "incognitoAccessRequiredDescription": {
     "message": "To open <b>$hostname$</b> through a proxy in Firefox, you need permission to work in Private Windows. Otherwise, our proxy will not work.",
     "placeholders": {

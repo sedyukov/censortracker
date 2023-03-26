@@ -176,6 +176,9 @@
    "ignoredSitesTitle": {
       "message": "Ігноровані сайти"
    },
+   "instructionForVolunteer": {
+      "message": "Instruction to become a volunteer"
+   },
    "incognitoAccessRequiredDescription": {
       "message": "Щоб відкрити <b>$hostname$</b> через проксі в Firefox потрібен дозвіл на роботу в приватних вікнах. Інакше проксі не працює.",
       "placeholders": {
